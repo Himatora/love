@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Для самого милого и прекрасного мужа</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    .fon {
+  background-image: url(image/1667249091_3-celes-club-p-goluboi-fon-s-serdechkami-oboi-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+        .love{
+            height: 150px;
+        }
+        p{
+            font-size: large;
+            font-weight: bold;
+            color: rgb(14, 65, 119);
+            border: solid 2px ;
+            border-radius: 20px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+        }
+        .you{
+            padding: 15px;
+        }
+    </style>
+</head>
+  <body>
+    <div class="fon">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="love" src="image/png-clipart-white-beige-and-pink-cat-illustration-keyboard-cat-computer-keyboard-hello-kitty-kitten-love-white-mammal.png" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p>Ты будешь моим партнером на день святого валентина?</p>
+                      
+                </div>
+            </div>
+            <div class="row justify-content-center you">
+            <div class="col-1">
+                    <button type="button" class="btn btn-success" onclick="alert('Я тебя люблю <3 Я в тебе не сомневалась')">Да </button>
+                    
+            </div>
+            <div class="col-1">
+                <span id="button1" style="position:relative;z-index:10" onmouseOver="moveIt();alert('Ты хорошо подумал?')" onfocus="moveIt();this.blur()">
+                <button type="button" class="btn btn-danger">Нет</button>
+             </span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getObj(objID)
+        {
+            if (document.getElementById) {return document.getElementById(objID);}
+            else if (document.all) {return document.all[objID];}
+            else if (document.layers) {return document.layers[objID];}
+        }
+        var ie4=document.all;
+        var ns6=document.getElementById&&!document.all;
+        cobj=getObj("button1");
+        
+        function moveIt(){
+        y=Math.floor(Math.random()*301);
+        x=Math.floor(Math.random()*401);
+        if (ie4){
+            cobj.style.top  = y;
+            cobj.style.left = x;
+            }
+        else if (ns6){
+            cobj.style.top  = y+"px";
+            cobj.style.left = x+"px";
+            }
+        }
+        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
